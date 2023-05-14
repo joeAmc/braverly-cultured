@@ -1,13 +1,78 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --primary: #d81e5b;
+  --secondary: #8a4efc;
+  --light: #eee;
+  --light-alt: #61759b;
+  --dark: #131a26;
+  --dark-alt: #202b3e;
+  --box-shadow: 0 0 15px rgba(0, 0, 0, 0.35);
+  --transition: all 400ms ease;
+  --border-radius: 8px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--dark-alt);
+  color: var(--light);
+}
+
+.App {
+  padding: 32px;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--light-alt);
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+button {
+  background-color: var(--primary);
+  background-image: linear-gradient(
+    to bottom,
+    var(--primary),
+    var(--secondary)
+  );
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: var(--border-radius);
+  width: 100%;
+  cursor: pointer;
+  font-size: 16px;
+  transition: var(--transition);
+}
+
+button:hover {
+  background-color: var(--primary);
+  background-image: linear-gradient(to bottom, #cd587f, #a175f1);
+}
+
+.spacer {
+  height: 100px;
 }
