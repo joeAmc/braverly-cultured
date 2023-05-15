@@ -39,11 +39,9 @@ h2 {
   margin-bottom: 16px;
 }
 
-h4 {
-  font-size: 16px;
-  font-weight: 500;
-  text-transform: uppercase;
-  color: var(--light-alt);
+a {
+  font-size: 28px;
+  color: var(--light);
 }
 
 h5 {
@@ -53,11 +51,11 @@ h5 {
 
 button {
   background-color: var(--primary);
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to bottom,
     var(--primary),
     var(--secondary)
-  );
+  ); */
   color: white;
   border: none;
   padding: 12px;
@@ -69,8 +67,8 @@ button {
 }
 
 button:hover {
-  background-color: var(--primary);
-  background-image: linear-gradient(to bottom, #cd587f, #a175f1);
+  background-color: var(--secondary);
+  /* background-image: linear-gradient(to bottom, #cd587f, #a175f1); */
 }
 
 .spacer {

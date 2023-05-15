@@ -1,0 +1,76 @@
+form {
+  width: 550px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+form h1 {
+  color: var(--light);
+  margin-bottom: -10px;
+}
+
+input::placeholder {
+  color: var(--light-alt);
+  font-size: 1.1rem;
+}
+textarea::placeholder {
+  color: var(--light-alt);
+  font-size: 1.1rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 1.2rem;
+  resize: none;
+  border: 2px solid var(--light);
+  border-radius: var(--border-radius);
+  background: transparent;
+  color: var(--primary-color);
+  font-size: 1.1rem;
+}
+
+#message {
+  height: 280px;
+}
+
+.form-h1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  z-index: -1;
+  margin-bottom: 8px;
+}
+
+.form-h1 svg {
+  position: absolute;
+  bottom: -24px;
+  left: 0;
+  font-size: 38px;
+  color: var(--secondary-color);
+}
+
+@media only screen and (max-width: 480px) {
+  form {
+    width: 300px;
+    padding: 0 !important;
+  }
+
+  #contact > div.form > form > textarea {
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 850px) and (min-width: 481px) {
+  form {
+    width: 400px;
+    padding: 0 !important;
+  }
+}
