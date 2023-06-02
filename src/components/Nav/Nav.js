@@ -1,13 +1,9 @@
 import React from "react";
-import { useEffect } from "react";
 import "../Nav/Nav.css";
-
-import { Link, useLocation } from "react-router-dom";
-import { BsThreeDots } from "react-icons/bs";
+import { HashLink as Link } from "react-router-hash-link";
+import Logo from "../../assets/logo-white.png";
 
 const Header = () => {
-  const location = useLocation();
-
   const scrollTop = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   };
@@ -50,25 +46,28 @@ const Header = () => {
     // <div className="header">
     <div className="nav">
       {/* <div className="nav-text"> */}
-      <h1>Braverly Cultured</h1>
-
+      <div>
+        <img onClick={scrollTop} src={Logo} alt="logo" />
+      </div>
       <div className="links">
+        <div className="home-link">
+          <Link to="/" onClick={scrollTop}>
+            <h3>HOME</h3>
+          </Link>
+        </div>
         <div className="about-link">
           <a href="#about">
-            <h3>About</h3>
-            <BsThreeDots />
+            <h3>ABOUT US</h3>
           </a>
         </div>
         <div className="collect-link">
           <a href="#team">
-            <h3>Team</h3>
-            <BsThreeDots />
+            <h3>TEAM</h3>
           </a>
         </div>
         <div className="contact-link">
           <a href="#contact">
-            <h3>Contact</h3>
-            <BsThreeDots />
+            <h3>OUR WAY?</h3>
           </a>
         </div>
       </div>
