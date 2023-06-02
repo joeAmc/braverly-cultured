@@ -28,6 +28,11 @@
 
 .footer h5 {
   color: white;
+  position: absolute;
+  bottom: -550px;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 .footer li {
