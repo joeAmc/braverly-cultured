@@ -14,22 +14,6 @@
   z-index: 2;
 }
 
-.nav.active {
-  position: fixed;
-  top: 0;
-  z-index: 2;
-  animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
-}
-
-.nav-text {
-  display: flex;
-  justify-content: space-between;
-}
-
-.nav h1 {
-  margin-bottom: 0;
-}
-
 .nav img {
   height: 120px;
   width: auto;
@@ -39,6 +23,7 @@
   margin-top: auto;
   margin-bottom: auto;
   left: 12px;
+  cursor: pointer;
 }
 
 .links {
@@ -46,120 +31,33 @@
 }
 
 .nav h3 {
-  text-decoration: none;
-  color: var(--primary-color);
-  font-size: 20px;
-  transition: var(--transition);
-  font-family: "El Messiri", sans-serif;
-  font-weight: 700;
+  margin-left: 32px;
 }
 
-.nav svg {
-  font-size: 32px;
-  color: white;
-  transition: var(--transition);
+.menu-icon {
+  display: none;
+  cursor: pointer;
 }
 
-.about-link {
-  display: flex;
-  flex-direction: column;
-  margin-left: 20px;
-  justify-content: center;
-  position: relative;
-}
+@media only screen and (max-width: 900px) {
+  .menu-icon {
+    display: block;
+  }
 
-.about-link svg {
-  position: absolute;
-  bottom: -22px;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-}
-.about-link:hover svg {
-  color: var(--primary-color);
-}
-
-.collect-link {
-  display: flex;
-  flex-direction: column;
-  margin-left: 20px;
-  justify-content: center;
-  position: relative;
-}
-
-.collect-link svg {
-  position: absolute;
-  bottom: -22px;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-}
-.collect-link:hover svg {
-  color: var(--accent-color);
-}
-
-.contact-link {
-  display: flex;
-  flex-direction: column;
-  margin-left: 20px;
-  justify-content: center;
-  position: relative;
-}
-
-.contact-link svg {
-  position: absolute;
-  bottom: -22px;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-}
-.contact-link:hover svg {
-  color: var(--secondary-color);
-}
-
-@media only screen and (max-width: 850px) {
-  .nav {
-    height: 124px;
-    display: flex;
+  .links {
+    display: none;
     flex-direction: column;
-    justify-content: center;
-    margin-top: 30px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgb(1, 1, 1);
+    padding: 16px;
+    transition: var(--transition);
+    z-index: 1;
   }
 
-  .nav.active {
-    position: fixed;
+  .links.open {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* margin-bottom: 178px; */
-  }
-
-  .nav h1 {
-    position: unset;
-    text-align: center;
-    margin-top: -16px;
-    font-size: 26px;
-  }
-
-  .nav img {
-    position: unset;
-    margin-top: -40px;
-    height: 80px;
-  }
-
-  .nav {
-    margin: 0;
-  }
-
-  .nav h3 {
-    padding: 0;
-    font-size: 17px;
-  }
-
-  .nav svg {
-    bottom: -18px;
   }
 }

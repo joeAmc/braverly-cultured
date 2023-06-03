@@ -28,15 +28,20 @@ body {
 }
 
 h1 {
-  font-size: 32px;
-  font-weight: 700;
+  font-size: 48px;
+  font-weight: 500;
   margin-bottom: 12px;
 }
 
 h2 {
   font-size: 28px;
-  font-weight: 700;
-  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 300;
+  text-transform: uppercase;
 }
 
 a {
@@ -51,11 +56,6 @@ h5 {
 
 button {
   background-color: var(--primary);
-  /* background-image: linear-gradient(
-    to bottom,
-    var(--primary),
-    var(--secondary)
-  ); */
   color: white;
   border: none;
   padding: 12px;
