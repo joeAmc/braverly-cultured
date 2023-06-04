@@ -28,7 +28,7 @@ const Header = () => {
           </Link>
         </div>
         <div className="collect-link">
-          <a href="#team">
+          <a href="/team">
             <h3>team</h3>
           </a>
         </div>
