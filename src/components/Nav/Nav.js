@@ -18,14 +18,14 @@ const Header = () => {
       </div>
       <div className={`links${menuOpen ? " open" : ""}`}>
         <div className="home-link">
-          <Link to="/" onClick={scrollTop}>
+          <Link smooth to="/" onClick={scrollTop}>
             <h3>home</h3>
           </Link>
         </div>
         <div className="about-link">
-          <a href="#about">
+          <Link to="#about" smooth={true}>
             <h3>about us</h3>
-          </a>
+          </Link>
         </div>
         <div className="collect-link">
           <a href="#team">
@@ -38,13 +38,15 @@ const Header = () => {
           </a>
         </div>
       </div>
-      <FiMenu
-        className={`menu-icon${menuOpen ? " open" : ""}`}
-        onClick={() => setMenuOpen(!menuOpen)}
-      />
-      <span></span>
-      <span></span>
-      <span></span>
+      <div className="menu">
+        <FiMenu
+          className={`menu-icon${menuOpen ? " open" : ""}`}
+          onClick={() => setMenuOpen(!menuOpen)}
+        />
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
   );
 };

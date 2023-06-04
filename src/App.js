@@ -1,16 +1,10 @@
 import "./index.css";
-import Nav from "./components/Nav/Nav";
-import Footer from "./components/Footer/Footer";
-import Banner from "./components/Banner/Banner";
-import Contact from "./components/Contact/Contact";
+import Home from "./pages/Home";
 
 function App() {
   return (
     <div className="App">
-      <Nav />
-      <Banner />
-      <Contact />
-      <Footer />
+      <Home />
     </div>
   );
 }

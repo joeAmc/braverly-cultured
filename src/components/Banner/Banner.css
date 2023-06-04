@@ -16,6 +16,7 @@
   right: 0;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 45px;
   z-index: 1;
   width: 70vw;
 }
@@ -29,15 +30,16 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* .banner-content h1 {
-  font-size: 46px;
-  margin-top: 16px;
-} */
-
 @media only screen and (max-width: 480px) {
   .banner-img {
     height: 100vh;
     width: 100vw;
     overflow: hidden;
+  }
+  .banner-container h1 {
+    font-size: 32px;
+  }
+  .banner-container h2 {
+    font-size: 24px;
   }
 }

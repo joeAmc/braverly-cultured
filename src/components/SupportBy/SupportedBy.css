@@ -1,0 +1,33 @@
+.supported-container {
+  position: relative;
+  background: url(../../assets/supportedby.jpg) no-repeat scroll center top
+    transparent;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-size: cover;
+}
+
+.supported-overlay {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(192, 186, 186, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: rgb(1, 1, 1);
+}
+
+.central-band {
+  height: 50vh;
+  width: 100vw;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.central-band img {
+  height: 90px;
+}

@@ -1,6 +1,6 @@
 .nav {
   width: 100%;
-  height: 120px;
+  height: 90px;
   padding: 0 32px;
   background-color: rgb(1, 1, 1);
   border-top: 2px solid var(--primary-color);
@@ -15,7 +15,7 @@
 }
 
 .nav img {
-  height: 120px;
+  height: 90px;
   width: auto;
   position: absolute;
   top: 0;
@@ -28,6 +28,8 @@
 
 .links {
   display: flex;
+  position: absolute;
+  right: 32px;
 }
 
 .nav h3 {
@@ -39,9 +41,15 @@
   cursor: pointer;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 769px) {
   .menu-icon {
     display: block;
+    font-size: 48px;
+  }
+
+  .nav h3 {
+    margin-left: 12px;
+    margin-bottom: 18px;
   }
 
   .links {
@@ -52,12 +60,13 @@
     left: 0;
     width: 100%;
     background-color: rgb(1, 1, 1);
-    padding: 16px;
+    padding: 32px 16px 16px 16px;
     transition: var(--transition);
     z-index: 1;
   }
 
   .links.open {
     display: flex;
+    background-color: rgba(2, 2, 2, 0.85);
   }
 }

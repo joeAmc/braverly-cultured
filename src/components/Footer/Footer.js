@@ -1,12 +1,10 @@
 import React from "react";
-// import { Link } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
-// import { Link } from "react-router-dom";
-// import Logo from "../../assets/Logo.png";
 import { FaEtsy } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
 import { BsLinkedin } from "react-icons/bs";
 import "../Footer/Footer.css";
+import Logo from "../../assets/logo-white.png";
 
 const Footer = () => {
   const scrollTop = () => {
@@ -19,33 +17,17 @@ const Footer = () => {
         {/* <div className="spacer"></div> */}
         <div className="footer">
           <div className="footer-items">
-            <Link to="/" onClick={scrollTop}>
-              <FaEtsy />
-            </Link>
-            <ul className="footer-links">
-              <li>
-                <Link to="/#about">About</Link>
-              </li>
-              <li>
-                <Link to="/#team">Team</Link>
-              </li>
-              <li>
-                <Link smooth to="/#contact">
-                  Contact
-                </Link>
-                {/* <Link smooth to="/#services"></Link> */}
-              </li>
-            </ul>
-            <div className="footer-icons">
+            <div className="footer-logo">
+              <img onClick={scrollTop} src={Logo} alt="logo" />
+            </div>
+            <div className="text-linkedin">
+              <p>Let’s change the future of food together!</p>
               <a href="https://www.linkedin.com/company/bravelycultured/">
                 <BsLinkedin />
               </a>
-              <a href="https://www.instagram.com/">
-                <BsInstagram />
-              </a>
             </div>
             <div className="copyright">
-              <h5>&copy; Braverly Cultured. All rights reserved</h5>
+              <h5>&copy; 2023 by BravelyCultured Ltd.</h5>
             </div>
           </div>
         </div>

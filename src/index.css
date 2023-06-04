@@ -5,7 +5,7 @@
   --light-alt: #61759b;
   --dark: #131a26;
   --dark-alt: #202b3e;
-  --box-shadow: 0 0 15px rgba(0, 0, 0, 0.35);
+  --box-shadow: 0 0 30px rgba(116, 113, 113, 0.35);
   --transition: all 400ms ease;
   --border-radius: 8px;
 }
@@ -23,10 +23,6 @@ body {
   color: var(--light);
 }
 
-.App {
-  /* padding: 32px; */
-}
-
 h1 {
   font-size: 48px;
   font-weight: 500;
@@ -39,7 +35,7 @@ h2 {
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 300;
   text-transform: uppercase;
 }

@@ -26,7 +26,6 @@ const Contact = () => {
 
   return (
     <section data-aos="fade" data-aos-duration="800" id="contact">
-      {/* <div className="spacer"></div> */}
       <div className="form">
         <form ref={form} onSubmit={sendEmail}>
           <div className="form-h1">
