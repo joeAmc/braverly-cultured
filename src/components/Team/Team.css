@@ -7,3 +7,44 @@
   align-items: center;
   flex-direction: column;
 }
+
+.team-cards-container {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+.team-cards {
+  width: 350px;
+  text-align: center;
+}
+
+.team-cards img {
+  height: auto;
+  width: inherit;
+  margin: 80px 0;
+}
+
+@media only screen and (max-width: 1160px) {
+  .team-cards {
+    width: 250px;
+  }
+}
+
+@media only screen and (max-width: 1010px) {
+  .team-cards {
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  .team-cards {
+    width: 150px;
+  }
+}
+
+@media only screen and (max-width: 665px) {
+  .team-cards {
+    width: 60vw;
+  }
+}
