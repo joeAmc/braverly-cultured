@@ -44,6 +44,12 @@
 }
 
 @media only screen and (max-width: 665px) {
+  .team-cards-container {
+    height: auto;
+    flex-direction: column;
+    padding: 64px 32px 64px 32px;
+  }
+
   .team-cards {
     width: 60vw;
   }

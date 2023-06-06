@@ -1,16 +1,17 @@
 import React from "react";
-import image from "../../assets/more efficient.png";
 import "./AboutUsCard.css";
+import { AboutUs2Data } from "./AboutUs2Data";
 
 const AboutUsCard = () => {
   return (
     <div className="card-container">
-      <h3>Better Efficiency</h3>
-      <img src={image} alt="" />
-      <p>
-        We scout the environment for microbes that are naturally efficient for
-        your production
-      </p>
+      {AboutUs2Data.map(({ image, title, text }) => (
+        <div key={title} className="card">
+          <h3>{title}</h3>
+          <img src={image} alt="" />
+          <p>{text}</p>
+        </div>
+      ))}
     </div>
   );
 };

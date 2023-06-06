@@ -31,3 +31,18 @@
 .central-band img {
   height: 90px;
 }
+
+@media (max-width: 1050px) {
+  .central-band img {
+    width: calc(50% - 20px);
+    height: auto;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .central-band {
+    flex-direction: column;
+    height: auto;
+  }
+}
