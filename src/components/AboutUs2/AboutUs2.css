@@ -66,5 +66,6 @@
   .aboutus2-container .card {
     width: 60vw;
     margin-bottom: 48px;
+    height: 100vh;
   }
 }

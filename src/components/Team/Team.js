@@ -1,6 +1,7 @@
 import React from "react";
 import "./Team.css";
-import fed from "../../assets/Fed2.jpg";
+import { TeamData } from "./TeamData";
+import { BsLinkedin } from "react-icons/bs";
 
 const Team = () => {
   return (
@@ -8,30 +9,33 @@ const Team = () => {
       <div className="team-container">
         <h1>OUR TEAM</h1>
         <div className="team-cards-container">
-          <div className="team-cards">
-            <img src={fed} alt="team member"></img>
-            <h2>FEDERICA PESCE</h2>
-            <h3>COO</h3>
-            <p>
-              Sustainable Food Systems & Policy Expert UN & European Commission
-            </p>
-          </div>
-          <div className="team-cards">
-            <img src={fed} alt="team member"></img>
-            <h2>FEDERICA PESCE</h2>
-            <h3>COO</h3>
-            <p>
-              Sustainable Food Systems & Policy Expert UN & European Commission
-            </p>
-          </div>
-          <div className="team-cards">
-            <img src={fed} alt="team member"></img>
-            <h2>FEDERICA PESCE</h2>
-            <h3>COO</h3>
-            <p>
-              Sustainable Food Systems & Policy Expert UN & European Commission
-            </p>
-          </div>
+          {TeamData.map(
+            ({
+              image,
+              title,
+              linkedin,
+              maintext,
+              why,
+              funfact,
+              name,
+              education,
+            }) => (
+              <div className="team-cards">
+                <img src={image} alt="team member"></img>
+                <h2>{name}</h2>
+                <h2>{title}</h2>
+                <h3>{education}</h3>
+                <a href={linkedin}>
+                  <BsLinkedin />
+                </a>
+                <p>{maintext}</p>
+                <h2>WHY BRAVELYCULTURED?</h2>
+                <p>{why}</p>
+                <h2>FUN FACT:</h2>
+                <p>{funfact}</p>
+              </div>
+            )
+          )}
         </div>
       </div>
     </section>

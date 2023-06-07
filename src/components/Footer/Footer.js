@@ -1,7 +1,5 @@
 import React from "react";
 import { HashLink as Link } from "react-router-hash-link";
-import { FaEtsy } from "react-icons/fa";
-import { BsInstagram } from "react-icons/bs";
 import { BsLinkedin } from "react-icons/bs";
 import "../Footer/Footer.css";
 import Logo from "../../assets/logo-white.png";
