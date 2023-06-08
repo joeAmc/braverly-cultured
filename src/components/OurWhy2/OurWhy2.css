@@ -1,0 +1,59 @@
+.ourwhy2-container {
+  height: 100vh;
+  background-color: rgb(1, 1, 1);
+  display: flex;
+  position: relative;
+}
+
+.ourwhy2-top-text {
+  position: absolute;
+}
+
+.ourwhy2-bottom-text {
+  position: absolute;
+}
+
+.left-items {
+  max-width: 95%;
+  z-index: 1;
+  display: flex;
+  margin-top: 200px;
+}
+
+.left-items img {
+  height: 70px;
+}
+
+.ourwhy2-left {
+  position: relative;
+  background: url(../../assets/pharmaceuticals.png) no-repeat scroll center top
+    transparent;
+  height: 100vh;
+  width: 50vw;
+  overflow: hidden;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* margin-top: 200px; */
+}
+.ourwhy2-right {
+  position: relative;
+  background: url(../../assets/biorectors.png) no-repeat scroll center top
+    transparent;
+  height: 100vh;
+  width: 50vw;
+  overflow: hidden;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}

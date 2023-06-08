@@ -21,7 +21,7 @@ const Team = () => {
               education,
             }) => (
               <div className="team-cards">
-                <img src={image} alt="team member"></img>
+                <img src={image} alt="team member" />
                 <h2>{name}</h2>
                 <h2>{title}</h2>
                 <h3>{education}</h3>

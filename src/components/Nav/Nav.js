@@ -33,7 +33,7 @@ const Header = () => {
           </a>
         </div>
         <div className="contact-link">
-          <a href="#contact">
+          <a href="/our_why?">
             <h3>our why?</h3>
           </a>
         </div>

@@ -1,7 +1,12 @@
 import React from "react";
+import OurWhy2 from "../components/OurWhy2/OurWhy2";
 
 const ourWhy = () => {
-  return <div>ourWhy</div>;
+  return (
+    <>
+      <OurWhy2 />
+    </>
+  );
 };
 
 export default ourWhy;

@@ -4,6 +4,7 @@ import Nav from "./components/Nav/Nav";
 import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home";
 import Team from "./pages/Team";
+import OurWhy from "./pages/OurWhy";
 
 function App() {
   return (
@@ -12,9 +13,7 @@ function App() {
       <Routes>
         <Route path="/" exact element={<Home />} />
         <Route path="/team" exact element={<Team />} />
-        {/* <Route path="/rings" element={<RingsPage />} />
-        <Route path="/earrings" element={<EarringsPage />} />
-        <Route path="/necklaces" element={<NecklacesPage />} /> */}
+        <Route path="/our_why?" exact element={<OurWhy />} />
       </Routes>
       <Footer />
     </div>
