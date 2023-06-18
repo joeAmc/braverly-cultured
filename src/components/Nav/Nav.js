@@ -1,14 +1,24 @@
 import React, { useState } from "react";
 import "../Nav/Nav.css";
+// import { HashLink as Link } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
+
 import Logo from "../../assets/logo-white.png";
 import { FiMenu } from "react-icons/fi";
 
-const Header = () => {
+const Nav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const scrollTop = () => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  };
+
+  const handleMenuIconClick = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  const handleDropdownClick = () => {
+    setMenuOpen(false);
   };
 
   return (
@@ -16,33 +26,33 @@ const Header = () => {
       <div className="nav-logo">
         <img onClick={scrollTop} src={Logo} alt="logo" />
       </div>
-      <div className={`links${menuOpen ? " open" : ""}`}>
-        <div className="home-link">
+      <div
+        className={`links${menuOpen ? " open" : ""}`}
+        onClick={handleDropdownClick}
+      >
+        <div className="link">
           <Link smooth to="/" onClick={scrollTop}>
             <h3>home</h3>
           </Link>
         </div>
-        <div className="about-link">
+        <div className="link">
           <Link to="#about" smooth={true}>
             <h3>about us</h3>
           </Link>
         </div>
-        <div className="collect-link">
+        <div className="link">
           <a href="/team">
             <h3>team</h3>
           </a>
         </div>
-        <div className="contact-link">
+        <div className="link">
           <a href="/our_why?">
             <h3>our why?</h3>
           </a>
         </div>
       </div>
-      <div className="menu">
-        <FiMenu
-          className={`menu-icon${menuOpen ? " open" : ""}`}
-          onClick={() => setMenuOpen(!menuOpen)}
-        />
+      <div className="menu" onClick={handleMenuIconClick}>
+        <FiMenu className={`menu-icon${menuOpen ? " open" : ""}`} />
         <span></span>
         <span></span>
         <span></span>
@@ -51,4 +61,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Nav;
