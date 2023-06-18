@@ -1,11 +1,13 @@
 .team-container {
-  height: 100vh;
+  min-height: 100vh;
+  /* height: 100vh; */
   width: 100vw;
   background-color: rgb(0, 0, 0);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-top: 32px;
 }
 
 .team-cards-container {
@@ -22,35 +24,254 @@
 .team-cards img {
   height: auto;
   width: inherit;
-  margin: 80px 0;
+  margin: 50px 0 21px 0;
+}
+
+.team-cards h2 {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.team-cards h3 {
+  height: 68px;
+  margin-bottom: 18px;
+}
+
+.team-cards a {
+  font-size: 40px;
+}
+
+.team-cards p {
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+#root
+  > div
+  > section:nth-child(2)
+  > div.team-container
+  > div
+  > div:nth-child(1)
+  > p:nth-child(6),
+#root
+  > div
+  > section:nth-child(2)
+  > div.team-container
+  > div
+  > div:nth-child(2)
+  > p:nth-child(6),
+#root
+  > div
+  > section:nth-child(2)
+  > div.team-container
+  > div
+  > div:nth-child(3)
+  > p:nth-child(6) {
+  height: 243px;
+  margin-top: 12px;
+}
+
+#root
+  > div
+  > section:nth-child(2)
+  > div.team-container
+  > div
+  > div:nth-child(1)
+  > p:nth-child(8),
+#root
+  > div
+  > section:nth-child(2)
+  > div.team-container
+  > div
+  > div:nth-child(2)
+  > p:nth-child(8),
+#root
+  > div
+  > section:nth-child(2)
+  > div.team-container
+  > div
+  > div:nth-child(3)
+  > p:nth-child(8) {
+  height: 67px;
 }
 
 @media only screen and (max-width: 1160px) {
   .team-cards {
-    width: 250px;
+    width: 320px;
   }
 }
 
 @media only screen and (max-width: 1010px) {
   .team-cards {
-    width: 200px;
+    width: 260px;
+  }
+  .team-cards h2 {
+    font-size: 22px;
+  }
+  .team-cards h3 {
+    font-size: 16px;
+  }
+  .team-cards p {
+    font-size: 16px;
   }
 }
 
 @media only screen and (max-width: 830px) {
   .team-cards {
-    width: 150px;
+    width: 205px;
+  }
+  .team-cards h2 {
+    font-size: 18px;
+  }
+  #root
+    > div
+    > section:nth-child(2)
+    > div.team-container
+    > div
+    > div:nth-child(1)
+    > p:nth-child(6),
+  #root
+    > div
+    > section:nth-child(2)
+    > div.team-container
+    > div
+    > div:nth-child(2)
+    > p:nth-child(6),
+  #root
+    > div
+    > section:nth-child(2)
+    > div.team-container
+    > div
+    > div:nth-child(3)
+    > p:nth-child(6) {
+    height: 285px;
+  }
+  #root
+    > div
+    > section:nth-child(2)
+    > div.team-container
+    > div
+    > div:nth-child(1)
+    > p:nth-child(8),
+  #root
+    > div
+    > section:nth-child(2)
+    > div.team-container
+    > div
+    > div:nth-child(2)
+    > p:nth-child(8),
+  #root
+    > div
+    > section:nth-child(2)
+    > div.team-container
+    > div
+    > div:nth-child(3)
+    > p:nth-child(8) {
+    height: 76px;
   }
 }
 
 @media only screen and (max-width: 665px) {
-  .team-cards-container {
+  .team-container {
     height: auto;
+  }
+
+  .team-cards-container {
+    /* min-height: 100vh; */
+    width: auto;
     flex-direction: column;
-    padding: 64px 32px 64px 32px;
+    padding: 0 32px 64px 32px;
   }
 
   .team-cards {
-    width: 60vw;
+    width: 80vw;
+    text-align: start;
+    position: relative;
+  }
+
+  .team-cards img {
+    height: auto;
+    width: inherit;
+    margin-bottom: 16px;
+    margin-top: 80px;
+  }
+
+  .team-cards h2 {
+    margin-bottom: 16px;
+  }
+
+  .team-cards h3 {
+    height: unset;
+    margin-bottom: 12px;
+  }
+  #root
+    > div
+    > section:nth-child(2)
+    > div.team-container
+    > div
+    > div:nth-child(1)
+    > p:nth-child(6),
+  #root
+    > div
+    > section:nth-child(2)
+    > div.team-container
+    > div
+    > div:nth-child(2)
+    > p:nth-child(6),
+  #root
+    > div
+    > section:nth-child(2)
+    > div.team-container
+    > div
+    > div:nth-child(3)
+    > p:nth-child(6) {
+    height: unset;
+    margin-top: 12px;
+    margin-bottom: 24px;
+  }
+  #root
+    > div
+    > section:nth-child(2)
+    > div.team-container
+    > div
+    > div:nth-child(1)
+    > p:nth-child(8),
+  #root
+    > div
+    > section:nth-child(2)
+    > div.team-container
+    > div
+    > div:nth-child(2)
+    > p:nth-child(8),
+  #root
+    > div
+    > section:nth-child(2)
+    > div.team-container
+    > div
+    > div:nth-child(3)
+    > p:nth-child(8) {
+    height: unset;
+  }
+
+  #root
+    > div
+    > section:nth-child(2)
+    > div.team-container
+    > div
+    > div:nth-child(1)
+    > h2:nth-child(2),
+  #root
+    > div
+    > section:nth-child(2)
+    > div.team-container
+    > div
+    > div:nth-child(2)
+    > h2:nth-child(2),
+  #root
+    > div
+    > section:nth-child(2)
+    > div.team-container
+    > div
+    > div:nth-child(3)
+    > h2:nth-child(2) {
+    margin-bottom: 0;
   }
 }

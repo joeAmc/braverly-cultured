@@ -8,7 +8,7 @@ const Banner = () => {
         <div className="overlay"></div>
         <div className="banner-content">
           <h1>
-            Natures microbiome has the answers to today’s food production
+            Nature's microbiome has the answers to today’s food production
             problems
           </h1>
           <h2>We help to find them</h2>

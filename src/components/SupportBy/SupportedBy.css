@@ -8,6 +8,11 @@
   background-size: cover;
 }
 
+.supported-container h1 {
+  position: absolute;
+  top: 84px;
+}
+
 .supported-overlay {
   height: 100vh;
   width: 100vw;
@@ -26,23 +31,30 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 32px;
 }
 
 .central-band img {
   height: 90px;
 }
 
-@media (max-width: 1050px) {
-  .central-band img {
-    width: calc(50% - 20px);
-    height: auto;
-    margin: 10px;
+@media (max-width: 1210px) {
+  .central-band {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
   }
 }
 
-@media (max-width: 600px) {
+@media only screen and (max-width: 665px) {
   .central-band {
-    flex-direction: column;
-    height: auto;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 60px;
+    height: fit-content;
+  }
+  .supported-container h1 {
+    font-size: 38px;
+    top: 34px;
   }
 }

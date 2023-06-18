@@ -6,6 +6,7 @@ import { BsLinkedin } from "react-icons/bs";
 const Team = () => {
   return (
     <section>
+      <div className="spacer"></div>
       <div className="team-container">
         <h1>OUR TEAM</h1>
         <div className="team-cards-container">
@@ -31,7 +32,7 @@ const Team = () => {
                 <p>{maintext}</p>
                 <h2>WHY BRAVELYCULTURED?</h2>
                 <p>{why}</p>
-                <h2>FUN FACT:</h2>
+                <h2>FUN FACT</h2>
                 <p>{funfact}</p>
               </div>
             )

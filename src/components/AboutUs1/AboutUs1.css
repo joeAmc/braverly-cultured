@@ -3,6 +3,7 @@
   height: 100vh;
   width: 100vw;
   display: flex;
+  padding: 32px;
 }
 
 .aboutus1-container img {
@@ -28,22 +29,71 @@
   flex-direction: column-reverse;
 }
 
-.left-side h1 {
+.about1-h1 {
   position: absolute;
   z-index: 1;
   top: 160px;
-  width: 40%;
+  width: 700px;
 }
 
 .right-side {
   text-align: right;
 }
 
-.right-side h3 {
+.right-side p {
   position: absolute;
   z-index: 1;
   bottom: 30px;
   right: 32px;
   text-align: start;
-  width: 60%;
+  width: 800px;
+  padding-bottom: 96px;
+  font-size: 28px;
+}
+
+@media only screen and (max-width: 875px) {
+  .right-side p {
+    max-width: 95%;
+    padding-left: 32px;
+  }
+  .aboutus1-container img {
+    width: 385px;
+  }
+}
+
+@media only screen and (max-width: 710px) {
+  .about1-h1 h1 {
+    font-size: 45px;
+  }
+}
+
+@media only screen and (max-width: 665px) {
+  .aboutus1-container {
+    min-height: 100vh;
+    /* flex-direction: column; */
+    padding: 64px 32px 64px 32px;
+  }
+  .aboutus1-container img {
+    margin-left: 20px;
+  }
+
+  .right-side img {
+    /* position: absolute; */
+    left: 240px;
+    top: 85px;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .about1-h1 h1 {
+    font-size: 32px;
+  }
+  .right-side img {
+    left: 100px;
+  }
+  .left-side img {
+    position: absolute;
+    left: 0;
+    width: 350px;
+  }
 }

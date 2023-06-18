@@ -3,29 +3,40 @@
   background-color: rgb(1, 1, 1);
   display: flex;
   position: relative;
+  z-index: 1;
+}
+
+.icons {
+  width: 120px;
+  display: inline-block;
+  text-align: center;
+  margin-right: 21px;
+}
+
+.ourwhy2-container img {
+  max-height: 100px;
+}
+
+.ourwhy2-bottom-text,
+.ourwhy2-top-text {
+  position: absolute;
+  z-index: 1;
+  font-size: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 95%;
 }
 
 .ourwhy2-top-text {
-  position: absolute;
+  top: 120px;
 }
 
 .ourwhy2-bottom-text {
-  position: absolute;
-}
-
-.left-items {
-  max-width: 95%;
-  z-index: 1;
-  display: flex;
-  margin-top: 200px;
-}
-
-.left-items img {
-  height: 70px;
+  bottom: 120px;
 }
 
 .ourwhy2-left {
-  position: relative;
   background: url(../../assets/pharmaceuticals.png) no-repeat scroll center top
     transparent;
   height: 100vh;
@@ -34,12 +45,21 @@
   background-size: cover;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* margin-top: 200px; */
+  padding: 48px;
+  justify-content: center;
 }
+
+.left-items1,
+.left-items2,
+.right-items1,
+.right-items2 {
+  align-items: center;
+  z-index: 1;
+  display: flex;
+  margin: 48px 0;
+}
+
 .ourwhy2-right {
-  position: relative;
   background: url(../../assets/biorectors.png) no-repeat scroll center top
     transparent;
   height: 100vh;
@@ -47,13 +67,14 @@
   overflow: hidden;
   background-size: cover;
   display: flex;
+  flex-direction: column;
+  padding: 48px;
   justify-content: center;
-  align-items: center;
 }
 
 .overlay {
   height: 100vh;
   width: 100vw;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   z-index: 1;
 }

@@ -41,7 +41,7 @@
   cursor: pointer;
 }
 
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 665px) {
   .menu-icon {
     display: block;
     font-size: 48px;

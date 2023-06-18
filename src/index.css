@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;500;600&display=swap");
+
 :root {
   --primary: #d81e5b;
   --secondary: #8a4efc;
   --light: #eee;
-  --light-alt: #61759b;
+  --light-alt: #dfe0e2;
   --dark: #131a26;
   --dark-alt: #202b3e;
   --box-shadow: 0 0 30px rgba(116, 113, 113, 0.35);
@@ -14,8 +16,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Barlow", sans-serif;
   text-decoration: none;
+}
+
+.App {
+  position: relative;
+  overflow: hidden;
 }
 
 body {
@@ -24,14 +31,13 @@ body {
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 64px;
   font-weight: 500;
-  margin-bottom: 12px;
 }
 
 h2 {
   font-size: 28px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 h3 {
@@ -40,14 +46,25 @@ h3 {
   text-transform: uppercase;
 }
 
-a {
+h4 {
   font-size: 28px;
-  color: var(--light);
+  font-weight: 300;
 }
 
 h5 {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 300;
+}
+
+p {
+  font-size: 24px;
+  font-weight: 300;
+  /* color: var(--light-alt); */
+}
+
+a {
+  font-size: 28px;
+  color: var(--light);
 }
 
 button {
@@ -68,5 +85,23 @@ button:hover {
 }
 
 .spacer {
-  height: 100px;
+  height: 90px;
+}
+
+@media only screen and (max-width: 731px) {
+  h1 {
+    font-size: 52px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 38px;
+  }
+  h2 {
+    font-size: 20px;
+  }
 }

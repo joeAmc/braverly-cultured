@@ -1,0 +1,65 @@
+.ourwhy1-container {
+  height: 100vh;
+  background-color: #0a0b0e;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.ourwhy1-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.ourwhy1-left {
+  background: url(../../assets/earth.png) no-repeat scroll center top
+    transparent;
+  height: 60vh;
+  width: 50vw;
+  overflow: hidden;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  background-position: center;
+  justify-content: center;
+}
+
+.ourwhy1-left h2 {
+  position: absolute;
+  max-width: 70vw;
+  font-size: 38px;
+  z-index: 1;
+  top: 70px;
+  left: 64px;
+}
+
+.left-items1 {
+  display: flex;
+  max-width: 90%;
+}
+
+.ourwhy1-right h2 {
+  position: absolute;
+  max-width: 60vw;
+  font-size: 38px;
+  z-index: 1;
+  bottom: 200px;
+  right: 64px;
+}
+
+.ourwhy1-right {
+  /* position: relative; */
+  background: url(../../assets/background_economics.png) no-repeat scroll center
+    top transparent;
+  height: 100vh;
+  width: 50vw;
+  overflow: hidden;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  background-position: center;
+}
