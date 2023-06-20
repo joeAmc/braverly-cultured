@@ -32,6 +32,10 @@
   right: 32px;
 }
 
+.link {
+  max-width: max-content;
+}
+
 .nav h3 {
   margin-left: 32px;
 }

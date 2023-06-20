@@ -41,14 +41,6 @@
   }
 }
 
-@media only screen and (max-width: 665px) {
-  .aboutus2-container {
-    height: auto;
-    flex-direction: column;
-    padding: 64px 32px 64px 32px;
-  }
-}
-
 @media only screen and (max-width: 1160px) {
   .aboutus2-container .card {
     width: 250px;
@@ -78,7 +70,7 @@
     justify-content: center;
   }
   .aboutus2-container .card {
-    width: 60vw;
+    width: 80vw;
     margin-bottom: 60px;
     height: 80vh;
   }
@@ -87,5 +79,14 @@
   }
   .aboutus2-container .card h2 {
     font-size: 39px;
+  }
+}
+
+@media only screen and (max-width: 447px) {
+  .aboutus2-container .card {
+    margin-bottom: 80px;
+  }
+  .aboutus2-container .card h2 {
+    font-size: 29px;
   }
 }

@@ -50,8 +50,12 @@
 @media only screen and (max-width: 665px) {
   .central-band {
     grid-template-columns: repeat(1, 1fr);
-    grid-gap: 60px;
+    grid-gap: 30px;
     height: fit-content;
+    padding: 16px;
+  }
+  .central-band img {
+    height: 80px;
   }
   .supported-container h1 {
     font-size: 38px;
