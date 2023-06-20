@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import "../Nav/Nav.css";
-// import { HashLink as Link } from "react-router-dom";
 import { HashLink as Link } from "react-router-hash-link";
-
 import Logo from "../../assets/logo-white.png";
 import { FiMenu } from "react-icons/fi";
 

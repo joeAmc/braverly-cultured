@@ -63,3 +63,22 @@
   flex-direction: column;
   background-position: center;
 }
+
+@media only screen and (max-width: 665px) {
+  .ourwhy1-container h2 {
+    font-size: 26px;
+    max-width: 80vw;
+  }
+  .ourwhy1-left h2 {
+    left: 32px;
+  }
+  .ourwhy1-right h2 {
+    right: 16px;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .ourwhy1-right h2 {
+    left: 32px;
+  }
+}
