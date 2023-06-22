@@ -1,18 +1,20 @@
 .aboutus1-container {
   background-color: rgb(0, 0, 0);
+  position: relative;
+  background: url(../../assets/about3.png) no-repeat scroll center bottom
+    transparent;
   height: 100vh;
   width: 100vw;
+  overflow: hidden;
+  background-size: cover;
   display: flex;
-  padding: 32px;
+  justify-content: center;
+  align-items: center;
+  /* padding: 32px; */
 }
 
 .aboutus1-container img {
-  width: 95%;
-  /* border-radius: 50%; */
-}
-
-#about {
-  position: relative;
+  position: absolute;
 }
 
 #about .about1-overlay {
@@ -24,21 +26,38 @@
   background-color: rgba(0, 0, 0, 0.65);
 }
 
-.left-side {
-  display: flex;
-  flex-direction: column-reverse;
+.left-side,
+.right-side {
+  height: 100vh;
+  width: 50vw;
+}
+
+.left-side img {
+  width: 600px;
+  bottom: 0;
+}
+.right-side img {
+  width: 600px;
+  top: 0;
+  right: 0;
 }
 
 .about1-h1 {
   position: absolute;
   z-index: 1;
-  top: 160px;
+  top: 80px;
   width: 700px;
+  left: 32px;
 }
 
-.right-side {
+/* .right-side {
   text-align: right;
-}
+  display: flex;
+  align-items: start;
+  height: 100vh;
+  width: 100vw;
+  justify-content: flex-end;
+} */
 
 .right-side p {
   position: absolute;
@@ -51,13 +70,29 @@
   font-size: 28px;
 }
 
+@media only screen and (max-width: 1200px) {
+  .left-side img {
+    width: 500px;
+  }
+  .right-side img {
+    width: 500px;
+  }
+}
+@media only screen and (max-width: 1020px) {
+  .left-side img {
+    width: 410px;
+  }
+  .right-side img {
+    width: 410px;
+  }
+}
+
 @media only screen and (max-width: 875px) {
   .right-side p {
     max-width: 95%;
     padding-left: 32px;
   }
   .aboutus1-container img {
-    width: 385px;
   }
 }
 
@@ -69,18 +104,6 @@
 
 @media only screen and (max-width: 665px) {
   .aboutus1-container {
-    min-height: 100vh;
-    /* flex-direction: column; */
-    padding: 64px 32px 64px 32px;
-  }
-  .aboutus1-container img {
-    margin-left: 20px;
-  }
-
-  .right-side img {
-    /* position: absolute; */
-    left: 240px;
-    top: 85px;
   }
 }
 
@@ -88,12 +111,9 @@
   .about1-h1 h1 {
     font-size: 32px;
   }
-  .right-side img {
+  /* .right-side img {
     left: 100px;
-  }
+  } */
   .left-side img {
-    position: absolute;
-    left: 0;
-    width: 350px;
   }
 }

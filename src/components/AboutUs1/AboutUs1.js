@@ -1,7 +1,7 @@
 import React from "react";
 import "./AboutUs1.css";
-import macroproblems from "../../assets/macroproblems.png";
-import microorganisms from "../../assets/microorganisms.png";
+// import macroproblems from "../../assets/macroproblems.png";
+// import microorganisms from "../../assets/microorganisms.png";
 
 const AboutUs1 = () => {
   return (
@@ -14,7 +14,7 @@ const AboutUs1 = () => {
             <h1>to solve</h1>
             <h1>MACROproblems</h1>
           </div>
-          <img src={microorganisms} alt="logo" />
+          {/* <img src={microorganisms} alt="logo" /> */}
         </div>
         <div className="right-side">
           <p>
@@ -25,7 +25,7 @@ const AboutUs1 = () => {
             We do this by harnessing the vast potential of nature’s largely
             unexplored marine microbiome.
           </p>
-          <img src={macroproblems} alt="logo" />
+          {/* <img src={macroproblems} alt="logo" /> */}
         </div>
         <div className="about1-overlay"></div>{" "}
       </div>
