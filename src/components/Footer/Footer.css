@@ -33,12 +33,24 @@
   font-size: 40px;
 }
 
-@media only screen and (max-width: 480px) {
-  .footer {
-    padding: 0;
+@media only screen and (max-width: 528px) {
+  .text-linkedin p {
+    font-size: 18px;
   }
-
   .footer img {
-    height: 160px;
+    height: 100px;
+  }
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media only screen and (max-width: 418px) {
+  .text-linkedin p {
+    font-size: 14px;
+  }
+  .copyright h5 {
+    font-size: 12px;
   }
 }

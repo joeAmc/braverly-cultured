@@ -2,7 +2,7 @@
   background-color: rgb(0, 0, 0);
   height: 100vh;
   width: 100vw;
-  padding: 154px 64px 64px 64px;
+  padding: 64px 64px 64px 64px;
   align-items: center;
   grid-template-columns: repeat(3, 1fr);
   display: flex;
@@ -20,6 +20,7 @@
   text-align: center;
   width: 300px;
   height: 100%;
+  max-height: 900px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -28,8 +29,8 @@
 .aboutus2-container .card p {
   height: 150px;
 }
-.aboutus2-container .card h2 {
-  height: 68px;
+.aboutus2-container .card h1 {
+  font-size: 32px;
 }
 
 @media only screen and (max-width: 1160px) {
@@ -38,6 +39,9 @@
   }
   .aboutus2-container .card p {
     font-size: 21px;
+  }
+  .aboutus2-container .card h1 {
+    font-size: 28px;
   }
 }
 
@@ -77,7 +81,7 @@
   .aboutus2-container .card p {
     font-size: 24px;
   }
-  .aboutus2-container .card h2 {
+  .aboutus2-container .card h1 {
     font-size: 39px;
   }
 }
@@ -86,7 +90,7 @@
   .aboutus2-container .card {
     margin-bottom: 80px;
   }
-  .aboutus2-container .card h2 {
+  .aboutus2-container .card h1 {
     font-size: 29px;
   }
 }

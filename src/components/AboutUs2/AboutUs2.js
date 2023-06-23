@@ -8,7 +8,7 @@ const AboutUs2 = () => {
       <div className="aboutus2-container">
         {AboutUs2Data.map(({ image, title, text }) => (
           <div key={title} className="card">
-            <h2>{title}</h2>
+            <h1>{title}</h1>
             <img src={image} alt="" />
             <p>{text}</p>
           </div>

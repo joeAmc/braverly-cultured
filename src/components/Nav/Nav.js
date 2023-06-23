@@ -34,7 +34,7 @@ const Nav = () => {
           </Link>
         </div>
         <div className="link">
-          <Link to="#about" smooth={true}>
+          <Link to="/#about" smooth={true}>
             <h3>about us</h3>
           </Link>
         </div>
