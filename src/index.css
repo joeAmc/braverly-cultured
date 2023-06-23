@@ -23,6 +23,7 @@
 .App {
   position: relative;
   overflow: hidden;
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -65,23 +66,6 @@ p {
 a {
   font-size: 28px;
   color: var(--light);
-}
-
-button {
-  background-color: var(--primary);
-  color: white;
-  border: none;
-  padding: 12px;
-  border-radius: var(--border-radius);
-  width: 100%;
-  cursor: pointer;
-  font-size: 16px;
-  transition: var(--transition);
-}
-
-button:hover {
-  background-color: var(--secondary);
-  /* background-image: linear-gradient(to bottom, #cd587f, #a175f1); */
 }
 
 .spacer {

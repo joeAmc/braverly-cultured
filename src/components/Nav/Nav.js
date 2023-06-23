@@ -22,7 +22,9 @@ const Nav = () => {
   return (
     <div className="nav">
       <div className="nav-logo">
-        <img onClick={scrollTop} src={Logo} alt="logo" />
+        <Link smooth to="/" onClick={scrollTop}>
+          <img src={Logo} alt="logo" />
+        </Link>
       </div>
       <div
         className={`links${menuOpen ? " open" : ""}`}
