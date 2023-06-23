@@ -10,7 +10,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding: 32px; */
 }
 
 #about .about1-overlay {
@@ -68,7 +67,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* padding: 32px; */
   }
   .aboutus1-container h1 {
     font-size: 45px;
@@ -80,11 +78,6 @@
     bottom: 100px;
     margin-top: 80px;
     text-align: center;
-  }
-}
-
-@media only screen and (max-width: 665px) {
-  .aboutus1-container {
   }
 }
 
