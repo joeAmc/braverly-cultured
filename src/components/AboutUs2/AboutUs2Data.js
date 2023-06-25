@@ -1,6 +1,6 @@
-import moreefficient from "../../assets/more efficient.png";
-import moreSustainable from "../../assets/more sustainable.png";
-import moreScalable from "../../assets/more scalable.png";
+import moreefficient from "../../assets/more efficientNew.jpg";
+import moreSustainable from "../../assets/more sustainableNew.jpg";
+import moreScalable from "../../assets/more scalableNew.jpg";
 
 export const AboutUs2Data = [
   {

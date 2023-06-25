@@ -53,8 +53,8 @@
 }
 
 .ourwhy2-left {
-  background: url(../../assets/pharmaceuticals.png) no-repeat scroll center top
-    transparent;
+  background: url(../../assets/pharmaceuticalsNew.jpg) no-repeat scroll center
+    top transparent;
   height: 100vh;
   width: 50vw;
   overflow: hidden;
@@ -79,7 +79,7 @@
 }
 
 .ourwhy2-right {
-  background: url(../../assets/biorectors.png) no-repeat scroll center top
+  background: url(../../assets/biorectorsNew.jpg) no-repeat scroll center top
     transparent;
   height: 100vh;
   width: 50vw;
