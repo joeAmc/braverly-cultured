@@ -1,6 +1,6 @@
 import fed from "../../assets/Fed2.jpg";
-import james from "../../assets/James.jpg";
-import natalija from "../../assets/Natalija.jpg";
+import james from "../../assets/JamesNew.jpg";
+import natalija from "../../assets/NatalijaNew.jpg";
 
 export const TeamData = [
   {
