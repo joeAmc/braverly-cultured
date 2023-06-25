@@ -75,6 +75,7 @@
   }
   .aboutus2-container .card {
     width: 80vw;
+    max-width: 400px;
     margin-bottom: 60px;
     height: 90vh;
   }

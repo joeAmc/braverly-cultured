@@ -10,11 +10,11 @@ const OurWhy2 = () => {
     <section>
       <div className="ourwhy2-container">
         <div className="overlay"></div>
-        <h1 className="ourwhy2-top-text">
-          CURRENT PRECISION FERMENTATION TECHNOLOGY IS NOT DESIGNED FOR FOOD
-          PRODUCTION
-        </h1>
         <div className="ourwhy2-left">
+          <h1 className="ourwhy2-top-text">
+            CURRENT PRECISION FERMENTATION TECHNOLOGY IS <strong>NOT</strong>{" "}
+            DESIGNED <strong>FOR FOOD PRODUCTION</strong>
+          </h1>
           <div className="left-items1">
             <div className="icons">
               <img src={microorganisms} alt="icon" />
@@ -64,10 +64,10 @@ const OurWhy2 = () => {
               <h3>307 L water/kg protein</h3>
             </div>
           </div>
+          <h1 className="ourwhy2-bottom-text">
+            BECAUSE IT IS OPTIMISED FOR PHARMACEUTICALS & BIOFUELS PRODUCTION
+          </h1>
         </div>
-        <h1 className="ourwhy2-bottom-text">
-          BECAUSE IT IS OPTIMISED FOR PHARMACEUTICALS & BIOFUELS PRODUCTION
-        </h1>
       </div>
       {/* 
         <h1 className="ourwhy2-top-text">

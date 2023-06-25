@@ -5,16 +5,32 @@
   position: relative;
   z-index: 1;
 }
+.ourwhy2-container h1 {
+  font-weight: 300;
+}
+.ourwhy2-container h2 {
+  font-weight: 500;
+}
+
+.ourwhy2-container .left-items1 {
+  max-width: 100%;
+}
 
 .icons {
-  width: 120px;
-  display: inline-block;
+  display: flex;
   text-align: center;
+  justify-content: center;
   margin-right: 21px;
+  min-width: 120px;
+  margin-left: 22px;
 }
 
 .ourwhy2-container img {
-  max-height: 100px;
+  height: 100px;
+}
+
+.ourwhy2-text {
+  margin-right: 22px;
 }
 
 .ourwhy2-bottom-text,
@@ -29,11 +45,11 @@
 }
 
 .ourwhy2-top-text {
-  top: 120px;
+  top: 80px;
 }
 
 .ourwhy2-bottom-text {
-  bottom: 120px;
+  bottom: 80px;
 }
 
 .ourwhy2-left {
@@ -45,7 +61,8 @@
   background-size: cover;
   display: flex;
   flex-direction: column;
-  padding: 48px;
+  /* padding-left: 32px;
+  padding-right: 16px; */
   justify-content: center;
 }
 
@@ -57,6 +74,8 @@
   z-index: 1;
   display: flex;
   margin: 48px 0;
+  width: 100%;
+  justify-content: start;
 }
 
 .ourwhy2-right {
@@ -68,8 +87,9 @@
   background-size: cover;
   display: flex;
   flex-direction: column;
-  padding: 48px;
   justify-content: center;
+  /* padding-left: 32px;
+  padding-right: 16px; */
 }
 
 .overlay {
@@ -77,4 +97,76 @@
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 1;
+}
+
+@media only screen and (max-width: 1200px) {
+  .ourwhy2-container h2 {
+    font-size: 22px;
+  }
+  .ourwhy2-container h3 {
+    font-size: 16px;
+  }
+  .ourwhy2-container h1 {
+    font-size: 29px;
+  }
+  .ourwhy2-container img {
+    height: 80px;
+  }
+  .icons {
+    margin-right: 16px;
+    min-width: 100px;
+  }
+}
+
+@media only screen and (max-width: 710px) {
+  .ourwhy2-container h2 {
+    font-size: 18px;
+  }
+  .ourwhy2-container h3 {
+    font-size: 14px;
+  }
+  .ourwhy2-container h1 {
+    font-size: 24px;
+  }
+  .ourwhy2-container img {
+    height: 60px;
+  }
+  .icons {
+    margin-right: 10px;
+    min-width: 80px;
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .ourwhy2-container {
+    flex-direction: column;
+  }
+  .ourwhy2-right,
+  .ourwhy2-left {
+    height: 50vh;
+    width: 100vw;
+    justify-content: space-between;
+    padding: 24px;
+  }
+  .left-items1,
+  .left-items2,
+  .right-items1,
+  .right-items2 {
+    margin: 0;
+  }
+  .ourwhy2-bottom-text,
+  .ourwhy2-top-text {
+    position: unset;
+    transform: unset;
+  }
+  .ourwhy2-container h1 {
+    font-size: 20px;
+  }
+  .icons {
+    margin-left: 0;
+  }
+  .ourwhy2-text {
+    margin-right: 0;
+  }
 }
