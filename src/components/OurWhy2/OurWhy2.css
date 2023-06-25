@@ -61,8 +61,6 @@
   background-size: cover;
   display: flex;
   flex-direction: column;
-  /* padding-left: 32px;
-  padding-right: 16px; */
   justify-content: center;
 }
 
@@ -88,14 +86,12 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* padding-left: 32px;
-  padding-right: 16px; */
 }
 
 .overlay {
   height: 100vh;
   width: 100vw;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.7);
   z-index: 1;
 }
 
