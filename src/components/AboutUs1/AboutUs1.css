@@ -48,6 +48,11 @@
     font-size: 22px;
   }
 }
+@media screen and (max-height: 450px) {
+  .aboutus1-container {
+    height: 150vh;
+  }
+}
 
 @media only screen and (max-width: 875px) {
   .aboutus1-container {
