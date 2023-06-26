@@ -40,6 +40,15 @@
   font-size: 28px;
 }
 
+@media screen and (max-height: 690px) {
+  .about1-h1 h1 {
+    font-size: 46px;
+  }
+  .aboutus1-container p {
+    font-size: 22px;
+  }
+}
+
 @media only screen and (max-width: 875px) {
   .aboutus1-container {
     flex-direction: column;

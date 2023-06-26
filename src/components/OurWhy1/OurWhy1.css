@@ -63,7 +63,16 @@
   flex-direction: column;
   background-position: center;
 }
-
+@media screen and (max-height: 690px) {
+  .ourwhy1-left h2 {
+    top: 70px;
+    font-size: 24px;
+  }
+  .ourwhy1-right h2 {
+    bottom: 140px;
+    font-size: 24px;
+  }
+}
 @media only screen and (max-width: 665px) {
   .ourwhy1-container h2 {
     font-size: 26px;

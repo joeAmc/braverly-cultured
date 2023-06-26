@@ -38,6 +38,12 @@
   height: 90px;
 }
 
+@media screen and (max-height: 690px) {
+  .supported-container h1 {
+    font-size: 46px;
+  }
+}
+
 @media (max-width: 1210px) {
   .central-band {
     display: grid;
