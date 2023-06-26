@@ -41,3 +41,9 @@
     overflow: hidden;
   }
 }
+
+@media screen and (max-height: 690px) {
+  .banner-container h1 {
+    font-size: 46px;
+  }
+}
