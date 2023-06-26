@@ -178,3 +178,8 @@
     margin-right: 0;
   }
 }
+@media screen and (max-height: 450px) {
+  .ourwhy2-container {
+    height: 200vh;
+  }
+}

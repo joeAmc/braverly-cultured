@@ -68,3 +68,8 @@
     top: 34px;
   }
 }
+@media screen and (max-height: 450px) {
+  .supported-container {
+    height: 200vh;
+  }
+}
