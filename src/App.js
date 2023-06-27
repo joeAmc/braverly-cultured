@@ -14,7 +14,7 @@ function App() {
         <title>Bravely Cultured</title>
         <meta
           name="description"
-          content="website for braverly cultured, finding answers to today’s food production problems "
+          content="website for braverly cultured, finding answers to today's food production problems "
         />
         <meta
           name="keywords"
