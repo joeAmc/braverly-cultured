@@ -10,12 +10,7 @@
     {
       "src": "logo-white-sm.png",
       "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "logo-white-sm.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "117x114"
     }
   ],
   "start_url": ".",
