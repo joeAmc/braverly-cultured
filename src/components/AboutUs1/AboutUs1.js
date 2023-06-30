@@ -13,7 +13,7 @@ const AboutUs1 = () => {
         </div>
         <p>
           BravelyCultured has turned to nature to find sustainable and scalable
-          precision fermentation solutions. We can accelerate industrial R&D and
+          precision fermentation solutions for the food industry. We can accelerate industrial R&D and
           improve the unit economics of precision fermentation. <br /> <br />
           We do this by harnessing the vast potential of nature’s largely
           unexplored marine microbiome.
