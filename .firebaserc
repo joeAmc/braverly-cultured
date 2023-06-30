@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "braverly-cultured"
-  }
+    "default": "bravely-cultured",
+    "bravelycultured": "bravely-cultured"
+  },
+  "targets": {},
+  "etags": {}
 }
