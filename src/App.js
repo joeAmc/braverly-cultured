@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <Helmet>
-        <title>Bravely Cultured</title>
+        <title>BravelyCultured</title>
         <meta
           name="description"
           content="website for braverly cultured, finding answers to today's food production problems "
