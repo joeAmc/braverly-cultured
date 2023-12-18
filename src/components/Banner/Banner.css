@@ -25,6 +25,11 @@
   margin-bottom: 32px;
 }
 
+
+.banner-mission h2 {
+  margin-top: 30px;
+}
+
 .overlay {
   position: absolute;
   top: 0;
